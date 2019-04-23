@@ -388,7 +388,7 @@ function template_body_below()
 		</ul>';
 
 	// Show the load time?
-	if ($context['show_load_time'])
+	if (!empty($context['show_load_time']))
 		echo '
 		<p>', sprintf($txt['page_created_full'], $context['load_time'], $context['load_queries']), '</p>';
 
